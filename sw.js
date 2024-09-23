@@ -3,11 +3,11 @@ self.addEventListener('install', (event) => {
         caches.open('hello-world-pwa').then((cache) => {
             return cache.addAll([
                 '/',
-                '/index.html',
-                '/style.css',
-                '/manifest.json',
-                '/icon-192.png',
-                '/icon-512.png'
+                'index.html',
+                'style.css',
+                'manifest.json',
+                'icon-192.png',
+                'icon-512.png'
             ]);
         })
     );
